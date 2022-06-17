@@ -96,7 +96,7 @@ void Rolodex::insertAfterCurrent(const std::string& value)
         temp->prev_ = sentinel;
         temp->next_ = sentinel;
         sentinel->prev_ = temp;
-        sentinel->next_ = sentinel;
+        sentinel->next_ = temp;
         current = temp;
         len += 1;
     }
