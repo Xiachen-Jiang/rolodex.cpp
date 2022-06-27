@@ -167,5 +167,6 @@ void Rolodex::removeCurrent(const std::string &value) {
         }
 
         delete(temp);
+        len -= 1;
     }
 }
